@@ -33,7 +33,7 @@ jobs:
 
     # steps to perform in job
     steps:
-      - name: Checkout code
+      - name: Checkout code$
         uses: actions/checkout@v2
 
       - name: Login to DockerHub
@@ -62,3 +62,4 @@ jobs:
           context: ./httpd
           # Note: tags has to be all lower-case
           tags: ${{secrets.DOCKERHUB_USERNAME}}/tp-devops-epf-mollyxmn:httpd
+          #1.
