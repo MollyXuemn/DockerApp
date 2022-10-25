@@ -1,0 +1,7 @@
+all:
+  vars:
+    ansible_user: centos
+    ansible_ssh_private_key_file: /Users/meinixue/EPF/09-12_2022/DevOs/DockerApp/DockerApp/ansible/id_rsa
+  children:
+    prod:
+      hosts: meini.xue.takima.cloud
