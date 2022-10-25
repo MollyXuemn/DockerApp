@@ -1,0 +1,9 @@
+---
+# tasks file for roles/app
+
+- name: Create a simple-api container
+  docker_container:
+    name: backend
+    image: mollyxmn/tp-devops-epf-mollyxmn:simple-api
+    networks:
+      - name: "app-network"

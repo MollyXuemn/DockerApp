@@ -1,0 +1,11 @@
+---
+# tasks file for roles/proxy
+
+- name: Create a httpd container
+  docker_container:
+    name: httpd
+    image: mollyxmn/tp-devops-epf-mollyxmn:httpd
+    networks:
+      - name: "app-network"
+    ports:
+      - "80:80"
